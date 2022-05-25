@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 62px;
+  margin-bottom: 100px;
+  background: #3C3A39;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-placeholder {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  list-style: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+header button {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  background: #3C3A39;
+  border: none;
+}
