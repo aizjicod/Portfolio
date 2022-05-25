@@ -1,12 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 header {
   height: 62px;
-  margin-bottom: 100px;
   background: #3C3A39;
   display: flex;
   justify-content: space-around;
@@ -15,9 +13,9 @@ header {
 
 .logo-placeholder {
   color: #fff;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  list-style: 24px;
+  line-height: 24px;
   font-weight: 700;
   text-align: center;
 }
@@ -28,4 +26,48 @@ header button {
   height: 40px;
   background: #3C3A39;
   border: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background: #1C1A19 url(img/illustration-header-mobile.png) no-repeat 100% 100%;
+  height: 590px; 
+}
+
+h1, h3, h5, section img {
+  margin: 0 24px 12px 24px
+}
+
+h1 {
+  width: 327px;
+  height: 124px;
+  margin-top: 124px;
+  color: #ff6b00;
+  font-family: 'crete round'; 
+  font-weight: 700;
+  font-size: 56px;
+}
+
+h3 {
+    width: 327px;
+    height: 27px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+h5 {
+  width: 327px;
+  height: 123px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+section img{
+    width: 200px;
+    height: 40px;
 }
