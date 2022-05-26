@@ -74,3 +74,24 @@ section img {
   width: 200px;
   height: 40px;
 }
+
+button:enabled {
+  background: #f55800;
+  color: #fff;
+}
+
+button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+button:focus {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
