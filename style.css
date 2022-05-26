@@ -7,8 +7,13 @@ header {
   height: 92px;
   background: #3c3a39;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+header button,
+.logo-placeholder {
+margin: 0 24px;
 }
 
 .logo-placeholder {
@@ -18,6 +23,10 @@ header {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 header button {
@@ -38,7 +47,7 @@ section {
 h1,
 h3,
 h5,
-section img {
+section ul {
   margin: 0 24px 12px 24px;
 }
 
@@ -70,9 +79,19 @@ h5 {
   color: #fff;
 }
 
-section img {
+.social-media {
   width: 200px;
-  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media li {
+  list-style: none;
+}
+
+.social-media li a img {
+  width: 24px;
+  height: 24px;
 }
 
 button:enabled {
