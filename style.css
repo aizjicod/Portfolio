@@ -24,7 +24,7 @@ header button {
   padding: 8px;
   width: 40px;
   height: 40px;
-  background: #3c3a39;
+  background: #3c3a39 !important;
   border: none;
 }
 
