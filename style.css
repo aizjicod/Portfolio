@@ -268,3 +268,99 @@ button:disabled {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.about-me {
+  background: #1c1a19;
+  height: max-content;
+}
+
+.abtme-content {
+  background: url(img/abtme-bg.png) no-repeat 100% 75%;
+  width: 375px;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.abtme-content h1 {
+  width: 327px;
+  height: max-content;
+  margin-top: 120px;
+  color: #ff6b00;
+  font-family: 'crete round', sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  margin-bottom: 24px;
+}
+
+.abtme-content p {
+  width: 327px;
+  height: max-content;
+  color: #f4f5f7;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.abt-btn {
+  width: 327px;
+}
+
+.abt-btn button {
+  padding: 12px;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 209px;
+}
+
+.line-separation {
+  width: 327px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 128px;
+}
+
+.skill {
+  height: max-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill-ul li {
+  color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+}
+
+.skill-ul li:first-child {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.skill-ul li:last-child {
+  margin-bottom: 32px;
+}
+
+.skill-ul img {
+  margin-right: 12px;
+}
+
+.frameworks img {
+  transform: rotate(45deg);
+}
