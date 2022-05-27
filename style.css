@@ -204,6 +204,10 @@ button:disabled {
   align-items: flex-end;
 }
 
+.card-works:last-child {
+  margin-bottom: 120px;
+}
+
 .card-content {
   display: flex;
   flex-wrap: wrap;
