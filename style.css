@@ -90,7 +90,7 @@ p,
   list-style: none;
 }
 
-.social-media li a img {
+.media-icon {
   width: 24px;
   height: 24px;
 }
@@ -154,7 +154,7 @@ button:disabled {
   margin-bottom: 12px;
 }
 
-.works-section p{
+.works-section p {
   width: 327px;
   height: 147px;
   font-family: 'Inter', sans-serif;
@@ -169,7 +169,7 @@ button:disabled {
 }
 
 .tag-btn {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #8993a4;
   padding: 10px 12px;
   font-family: 'Inter', sans-serif;
@@ -184,7 +184,7 @@ button:disabled {
 }
 
 .works-btn {
-  background: #ff6b00 !important ;
+  background: #ff6b00 !important;
   gap: 10px;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -204,7 +204,7 @@ button:disabled {
   align-items: flex-end;
 }
 
-.card-content{
+.card-content {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -216,7 +216,7 @@ button:disabled {
   line-height: 44px;
   color: #fff;
   height: max-content;
-  margin:0 16px 12px;
+  margin: 0 16px 12px;
 }
 
 .card-content p {
@@ -225,12 +225,12 @@ button:disabled {
   line-height: 24px;
   color: #fff;
   height: max-content;
-  margin:0 16px 12px;
+  margin: 0 16px 12px;
 }
 
 .card-content .tecnologies-used {
   height: max-content;
-  margin:0 16px 12px;
+  margin: 0 16px 12px;
 }
 
 .tecnologies-used button {
@@ -256,5 +256,5 @@ button:disabled {
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
 }
