@@ -231,13 +231,19 @@ button:disabled {
 .card-content .tecnologies-used {
   height: max-content;
   margin: 0 16px 12px;
+  display: flex;
 }
 
-.tecnologies-used button {
+.tecnologies-used li {
   background: rgba(255, 255, 255, 24%);
   padding: 10px 12px;
   margin-right: 12px;
   font-size: 15px;
+  list-style: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .card-content .action-btn {
