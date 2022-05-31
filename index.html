@@ -186,12 +186,12 @@
         </section>
         <!-- end of about me section -->
         <section class="form-section">
-            <article>
-                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-                <form action="https://formspree.io/f/xlezzzkn" method="POST">
-                    <input type="text" name="name">
-                    <input type="email" name="email">
-                    <textarea name="message" id="" cols="30" rows="10">
+            <article class="first-article-contact">
+                <p class="contact-para">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+                <form action="https://formspree.io/f/xlezzzkn" method="POST" id="contact-form">
+                    <input type="text" name="name" maxlength="30" required placeholder="Write Name" id="name-input">
+                    <input type="email" name="email" required placeholder="Write Email">
+                    <textarea name="message" id="" cols="30" rows="10" maxlength="500" placeholder="Write Your Message" required>
             
                     </textarea>
                     <button type="submit">Get in touch</button>
@@ -205,7 +205,7 @@
                     <li class="linkedin-icon"><a href="#"><img src="img/linkedin-icon.png" alt="this is an icon for linkedin" class="media-icon"></a></li>
                     <li class="twitter-icon"><a href="#"><img src="img/twitter-icon.png" alt="this is an icon for twitter" class="media-icon"></a></li>
                 </ul>
-                <img src="" alt="">
+                <img src="./img/bottom-line-contact.png" alt="A line that indicates bottom of the page">
             </article>
         </section>
     </main>

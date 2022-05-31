@@ -368,3 +368,43 @@ button:disabled {
 /* .botton-article .twitter-icon {
   color: black;
 } */
+
+.first-article-contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-para {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+#contact-form {
+  border-bottom: 1px solid #dfe1E6;
+}
+
+#contact-form input {
+  border-bottom: 1px solid #dbd8d7;
+  height: 48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  width: 327px;
+}
+
+#contact-form textarea {
+  width: 327px;
+  height: 114px;
+}
+
+#contact-form button {
+  width: 131px;
+  height: 48px;
+}
