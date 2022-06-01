@@ -284,7 +284,7 @@ button:disabled {
   background: #1c1a19;
   height: max-content;
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: wrap row;
   justify-content: center;
   align-items: center;
 }
@@ -339,7 +339,7 @@ button:disabled {
 }
 
 .line-separation {
-  width: 327px;
+  width: 75%;
   border-bottom: 1px solid #fff;
   margin-bottom: 128px;
 }
@@ -548,7 +548,7 @@ button:disabled {
     margin: 0;
   }
 
-  .media-icon {
+  .headline .media-icon {
     margin: 0 87px 0 33px;
     width: 20px;
     height: 20px;
@@ -592,4 +592,31 @@ button:disabled {
 /* end of work section
    start of about me section */
 
+   .abtme-content {
+     background-image: url(img/desktop-version/desktop-bg-abtme.png);
+     background-position: 100% 50%;
+   }
+
+   .abtme-content h2 {
+     text-align: start;
+   }
+
+   .abt-btn button{
+     margin-bottom: 151px;
+   }
+
+   .abtme-content h2,
+   .abtme-content p,
+   .abtme-content .abt-btn {
+    position: relative;
+    left: -25%;
+  }
+  
+  .skill {
+    width:100%;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:flex-start;
+    padding: 131px 0;
+  }
 }
