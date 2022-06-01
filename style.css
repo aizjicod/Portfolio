@@ -395,13 +395,16 @@ button:disabled {
 
 #contact-form input {
   border-bottom: 1px solid #dbd8d7;
-  height: 48px;
+  height: 56px;
+  padding: 8px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   width: 327px;
+  color: #979493;
+  margin-bottom:24px;
 }
 
 #contact-form input::placeholder,
@@ -413,6 +416,7 @@ button:disabled {
   width: 327px;
   height: 114px;
   margin-bottom: 24px;
+  background: #fbf8f7;
 }
 
 #contact-form button {
