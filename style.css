@@ -4,6 +4,9 @@
   border: none;
 }
 
+.desktop-v {
+  display: none;
+}
 header {
   height: 92px;
   background: #3c3a39;
@@ -45,14 +48,19 @@ header button {
   height: 590px;
 }
 
+.headline-aricle { 
+  display: flex;
+  flex-direction: column;
+}
+
 h1,
 h2,
 p,
-.headline ul {
+.headline-article ul {
   margin: 0 24px 12px 24px;
 }
 
-.headline h1 {
+.headline-article h1 {
   width: 327px;
   height: 124px;
   margin-top: 124px;
@@ -62,7 +70,7 @@ p,
   font-size: 56px;
 }
 
-.headline h2 {
+.headline-article h2 {
   width: 327px;
   height: 27px;
   font-family: 'Roboto', sans-serif;
@@ -70,7 +78,7 @@ p,
   margin-bottom: 12px;
 }
 
-.headline p {
+.headline-para {
   width: 327px;
   height: 123px;
   font-family: 'Poppins', sans-serif;
@@ -84,6 +92,7 @@ p,
   width: 200px;
   display: flex;
   justify-content: space-between;
+  margin-left:24px;
 }
 
 .social-media li {
@@ -448,4 +457,99 @@ button:disabled {
 
 .bottom-line img {
   margin: 23px 120px 8px 120px;
+}
+
+/* desktop version */
+@media screen and (min-width: 768px){
+  .mobile-v {
+    display:none;
+  }
+
+  .desktop-v {
+    display: block;
+  }
+
+  /* start header */
+  header {
+    height: 72px;
+  }
+
+  .logo-placeholder {
+    margin-left: 100px;
+  }
+
+  .nav-items-dt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-right: 142px;
+  }
+
+  .headline-dt-ul {
+    display: flex;
+    gap: 32px; 
+  }
+
+  .headline-dt-ul li {
+    list-style: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  a{
+    color: #fff;
+  }
+
+  /* end of header */
+  /* start of headline */
+
+  .headline {
+    background-image: url(img/desktop-version/desktop-bg-headline.png);
+    background-size: contain;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+  }
+
+  .headline .social-media {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    order: -1;
+    width: max-content;
+  }
+  
+  .headline-article {
+    width: 565px;
+    padding:122px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+
+  .headline-article h1,
+  .headline-article h2,
+  p,
+  .headline-article ul {
+    margin: 0;
+  }
+
+  .media-icon {
+    margin: 0 87px 0 33px;
+    width: 20px;
+    height: 20px;
+  }
+
+  /* end of headline 
+     start of work section*/
+
+  .works-section {
+    width: 100%
+  }
+
 }
