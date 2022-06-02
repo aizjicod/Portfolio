@@ -116,7 +116,7 @@ button:hover {
   color: #f55800;
 }
 
-button:focus {
+button:active {
   background: #e05304 !important;
   color: #f4f1f0;
 }
