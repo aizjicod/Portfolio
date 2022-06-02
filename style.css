@@ -388,6 +388,14 @@ button:disabled {
   flex-wrap: wrap;
   justify-content: center;
 }
+/* end of about me section
+start of contact form */
+.form-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 .contact-para {
   font-family: 'Inter', sans-serif;
@@ -407,6 +415,7 @@ button:disabled {
   border-bottom: 1px solid #dfe1e6;
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
   justify-content: center;
   margin-bottom: 25px;
 }
@@ -414,15 +423,14 @@ button:disabled {
 #contact-form input {
   border-bottom: 1px solid #dbd8d7;
   height: 56px;
+  width: 80%;
   padding: 8px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  width: 327px;
   color: #979493;
-  margin-bottom: 24px;
 }
 
 #contact-form input::placeholder,
@@ -431,9 +439,9 @@ button:disabled {
 }
 
 #contact-form textarea {
-  width: 327px;
+  /* width: 327px; */
+  width: 80%;
   height: 114px;
-  margin-bottom: 24px;
   background: #fbf8f7;
 }
 
@@ -452,6 +460,7 @@ button:disabled {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  min-width: 100%;
   flex-wrap: wrap;
 }
 
@@ -559,7 +568,8 @@ button:disabled {
 
     .works-section {
       margin: 0 115px;
-      grid-auto-columns: minmax(min-content,max-content);
+      grid-template-columns: 1fr 1fr;
+      /* grid-auto-columns: minmax(min-content,max-content); */
       grid-auto-rows: max-content;
       grid-auto-flow: row;
       justify-content: center;
@@ -568,12 +578,14 @@ button:disabled {
 
     .works-h1 {
       border-bottom:none; 
+      display: inline;
       margin: 115px 0;
       height: max-content;
       text-align: center;
     }
 
     .line-h1-works {
+      display:inline;
       border-bottom: 1px #000 solid;
       position: relative;
       /* grid-column:; */
@@ -619,4 +631,48 @@ button:disabled {
     align-items:flex-start;
     padding: 131px 0;
   }
+  /* end of about 
+  start of contact form*/
+  .form-section {
+    height: max-content;
+  }
+
+  .contact-para {
+    margin: 0;
+    text-align: start;
+  }
+
+  .first-article-contact {
+    margin: 130px auto 25px;
+    padding-bottom: 130px;
+    gap: 24px;
+    align-items: baseline;
+    border-bottom: 1px solid #dfe1e6;
+  }
+  
+  #contact-form {
+    width: 684px;
+    padding: 0;
+    border:none;
+  }
+
+  #contact-form input {
+    width: 100%;
+    padding: 2px;
+  } 
+
+  #contact-form textarea {
+    width: 100%;
+  }
+
+  .botton-article .social-media {
+    margin-bottom: 18px;
+  }
+
+  .botton-article .social-media li {
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  /* end of contact form */
 }
