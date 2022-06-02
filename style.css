@@ -117,7 +117,7 @@ button:hover {
 }
 
 button:focus {
-  background: #e05304;
+  background: #e05304 !important;
   color: #f4f1f0;
 }
 
@@ -125,6 +125,7 @@ button:disabled {
   background: #f4f1f0;
   color: #5b5957;
 }
+
 
 .works-section {
   background: #fff;
@@ -695,6 +696,7 @@ start of contact form */
     width: 684px;
     padding: 0;
     border: none;
+    justify-content: start;
   }
 
   #contact-form input {
