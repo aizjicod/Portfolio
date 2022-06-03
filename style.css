@@ -28,6 +28,11 @@ header button,
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+  transition: transform 2s;
+}
+
+.logo-placeholder:hover {
+  transform: rotate(360deg);
 }
 
 a {
@@ -526,6 +531,11 @@ start of contact form */
 
   a {
     color: #fff;
+    transition: color 0.5s;
+  }
+
+  a:hover {
+    color: #e05304;
   }
 
   /* end of header
@@ -563,10 +573,18 @@ start of contact form */
     margin: 0;
   }
 
+  .media-icon {
+    transition: all 1s;
+  }
+
   .headline .media-icon {
     margin: 0 87px 0 33px;
     width: 20px;
     height: 20px;
+  }
+
+  .media-icon:hover {
+    transform: scale(1.5);
   }
 
   /* end of headline
@@ -624,6 +642,12 @@ start of contact form */
 
   .card-works {
     margin: 0;
+    transition: all 1s;
+  }
+
+  .card-works:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #e05304, 0 0 10px #e05304, 0 0 10px #e05304;
   }
 
   .card-works:first-child {
