@@ -28,6 +28,11 @@ header button,
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+  transition: transform 2s;
+}
+
+.logo-placeholder:hover {
+  transform: rotate(360deg);
 }
 
 a {
@@ -526,6 +531,11 @@ start of contact form */
 
   a {
     color: #fff;
+    transition: color .5s;
+  }
+
+  a:hover {
+    color: #e05304;
   }
 
   /* end of header
