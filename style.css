@@ -531,7 +531,7 @@ start of contact form */
 
   a {
     color: #fff;
-    transition: color .5s;
+    transition: color 0.5s;
   }
 
   a:hover {
@@ -573,19 +573,18 @@ start of contact form */
     margin: 0;
   }
 
+  .media-icon {
+    transition: all 1s;
+  }
+
   .headline .media-icon {
     margin: 0 87px 0 33px;
     width: 20px;
     height: 20px;
-    /* transition: all 1s; */
   }
 
   .media-icon:hover {
-    transform: scale(1.5); 
-  }
-
-  .media-icon {
-    transition: all 1s;
+    transform: scale(1.5);
   }
 
   /* end of headline
