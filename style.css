@@ -577,6 +577,15 @@ start of contact form */
     margin: 0 87px 0 33px;
     width: 20px;
     height: 20px;
+    transition: all 1s;
+  }
+
+  .media-icon:hover {
+    transform: scale(1.5);
+  }
+
+  .media-icon {
+    transition: all 1s;
   }
 
   /* end of headline
@@ -634,6 +643,12 @@ start of contact form */
 
   .card-works {
     margin: 0;
+    transition: all 1s;
+  }
+
+  .card-works:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px orange, 0 0 10px orange, 0 0 10px orange;
   }
 
   .card-works:first-child {
