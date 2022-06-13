@@ -14,6 +14,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 header button,
@@ -45,6 +47,24 @@ header button {
   height: 40px;
   background: #3c3a39 !important;
   border: none;
+}
+
+
+.menu-mobile {
+  position:absolute;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #3c3a39;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: -1;
+}
+
+.menu-mobile li {
+  list-style: none;
 }
 
 .headline {
