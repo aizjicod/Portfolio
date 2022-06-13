@@ -6,5 +6,9 @@ console.log(listItem)
 let menuTgl = ()=> { menu.classList.toggle("visibility"); }
 btn.addEventListener("click",menuTgl);
 listItem.forEach(child => {
-    child.addEventListener("click",menuTgl);
+
+
+
+    
+    child.addEventListener("click",menuTgl);  
 });
