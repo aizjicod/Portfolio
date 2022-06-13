@@ -51,9 +51,8 @@ header button {
   border: none;
 }
 
-
 .menu-mobile {
-  position:absolute;
+  position: absolute;
   left: 0;
   height: 100vh;
   width: 100%;
@@ -68,13 +67,13 @@ header button {
 .menu-mobile li {
   width: 88%;
   list-style: none;
-  border-bottom: #6F6C6B 1px solid;
+  border-bottom: #6f6c6b 1px solid;
   margin: 12px 0;
   padding: 15px;
 }
 
 .menu-mobile li a {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
