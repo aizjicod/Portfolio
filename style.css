@@ -64,7 +64,20 @@ header button {
 }
 
 .menu-mobile li {
+  width: 88%;
   list-style: none;
+  border-bottom: #6F6C6B 1px solid;
+  margin: 12px 0;
+  padding: 15px;
+}
+
+.menu-mobile li a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
 }
 
 .headline {
@@ -761,4 +774,8 @@ start of contact form */
   }
 
   /* end of contact form */
+}
+
+.visibility {
+  display: none;
 }
