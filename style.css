@@ -52,7 +52,7 @@ a {
   padding: 8px;
   width: 40px;
   height: 40px;
-  background: #3c3a39 ;
+  background: #3c3a39;
 }
 
 .bar {
@@ -65,18 +65,18 @@ a {
   background-color: #fff;
 }
 
-.hamburguer-btn.active .bar:nth-child(2){
+.hamburguer-btn.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburguer-btn.active .bar:nth-child(1){
-  transform: translateY(8px)rotate(45deg);
-  background-color: #67798E;
+.hamburguer-btn.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #67798e;
 }
 
-.hamburguer-btn.active .bar:nth-child(3){
-  transform: translateY(-8px)rotate(-45deg);
-  background-color: #67798E;
+.hamburguer-btn.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #67798e;
 }
 
 .menu-mobile {
