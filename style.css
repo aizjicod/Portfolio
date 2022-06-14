@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
 }
 
 .desktop-v {
@@ -15,14 +20,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 99;
+  padding: 0 24px;
 }
 
-header button,
-.logo-placeholder {
-  margin: 0 24px;
+header.active {
+  justify-content: flex-end;
 }
 
 .logo-placeholder {
@@ -43,12 +48,35 @@ a {
   text-decoration: none;
 }
 
-header button {
+.hamburguer-btn {
   padding: 8px;
   width: 40px;
   height: 40px;
-  background: #3c3a39 !important;
-  border: none;
+  background: #3c3a39 ;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 5px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.hamburguer-btn.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hamburguer-btn.active .bar:nth-child(1){
+  transform: translateY(8px)rotate(45deg);
+  background-color: #67798E;
+}
+
+.hamburguer-btn.active .bar:nth-child(3){
+  transform: translateY(-8px)rotate(-45deg);
+  background-color: #67798E;
 }
 
 .menu-mobile {
@@ -61,7 +89,6 @@ header button {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  z-index: -1;
 }
 
 .menu-mobile li {
