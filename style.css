@@ -346,6 +346,117 @@ button:disabled {
   letter-spacing: 0.03em;
 }
 
+.blur {
+  filter: blur(8px);
+}
+
+.popup {
+  width: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  overflow: visible;
+  scroll-behavior: auto;
+  justify-content: center;
+  align-content: center;
+  z-index: 99;
+}
+
+.wrapper-pop {
+  margin-top: 20px; 
+  padding: 16px;
+  width: 85%;
+  height: 80%;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.title-pop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title-pop .title {
+  padding-bottom: 30px;
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.title-pop .hamburguer-btn {
+  display: block;
+  background-color: inherit;
+}
+
+.title-pop .hamburguer-btn .bar {
+  background: black;
+}
+
+.title-pop .hamburguer-btn .bar:first-child {
+  transform: rotate(45deg) translateY(5.5px);
+}
+
+.title-pop .hamburguer-btn .bar:last-child {
+  transform: rotate(-45deg) translateY(-5.5px);
+}
+
+.title-pop .tecnologies-used {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  margin: 0 24px
+}
+
+.title-pop .tecnologies-used li{
+  border: 1px solid #979493;
+  color: #000;
+  width: max-content;
+}
+
+.information-pop {
+  display: flex;
+  flex-direction: column;
+}
+
+.information-pop .img-project{
+  margin: 24px auto;
+  min-width: 311px;
+  max-width: 50%;
+}
+
+.information-pop .information {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-around;
+}
+
+.information-pop .information .information-p {
+  width: 100%;
+}
+
+.information-pop .information .information-btn {
+  padding: 12px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 /* end work section
 start about me section */
 
