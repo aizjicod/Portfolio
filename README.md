@@ -1,4 +1,3 @@
-
 # Portfolio
 
 > on this project a will be doing my first Portfolio from which i will develop it later on.
@@ -14,18 +13,15 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+>To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-    no pre-requisites.
+    before starting be sure to have a code editor (any works).
+    be sure to have in your locar computer git desktop or bash any works. this will help when cloning the repository.
 ### Setup
-    grab the link of this proyect in order to clone it later on.
+    grab the link of this proyect, this can be found on the page of the repository, in order to clone it later on.
 ### Install
-    on your command console write "git clone <link of the repo>. it should download everything on this proyect
+    on your command console write "git clone <link of the repo>". it should download everything on this proyect
 ### Usage
     run it on your code editor.
 
@@ -42,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/aizjicod/Portfolio/issues).
 
 ## Show your support
 

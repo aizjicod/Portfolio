@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
 }
 
 .desktop-v {
@@ -9,16 +14,20 @@
 }
 
 header {
+  width: 100%;
   height: 92px;
   background: #3c3a39;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  padding: 0 24px;
 }
 
-header button,
-.logo-placeholder {
-  margin: 0 24px;
+header.active {
+  justify-content: flex-end;
 }
 
 .logo-placeholder {
@@ -39,12 +48,64 @@ a {
   text-decoration: none;
 }
 
-header button {
+.hamburguer-btn {
   padding: 8px;
   width: 40px;
   height: 40px;
-  background: #3c3a39 !important;
-  border: none;
+  background: #3c3a39;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 5px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.hamburguer-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer-btn.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #67798e;
+}
+
+.hamburguer-btn.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #67798e;
+}
+
+.menu-mobile {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #3c3a39;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-mobile li {
+  width: 88%;
+  list-style: none;
+  border-bottom: #6f6c6b 1px solid;
+  margin: 12px 0;
+  padding: 15px;
+}
+
+.menu-mobile li a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
 }
 
 .headline {
@@ -134,7 +195,7 @@ button:disabled {
 .works-section {
   background: #fff;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: max-content;
   grid-auto-rows: max-content;
   justify-content: center;
   margin: 0 24px;
@@ -636,8 +697,10 @@ start of contact form */
     grid-area: card-wraper;
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, max-content));
+    justify-content: center;
     grid-auto-rows: max-content;
     gap: 24px;
+    margin: 24px 0 37px;
   }
 
   .card-works {
@@ -741,4 +804,8 @@ start of contact form */
   }
 
   /* end of contact form */
+}
+
+.visibility {
+  display: none;
 }
