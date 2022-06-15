@@ -935,7 +935,7 @@ start of contact form */
   }
 
   .information-pop .information {
-    width: fit-content;
+    width: 40%;
     justify-content: flex-start;
     padding: 24px;
   }
@@ -946,7 +946,6 @@ start of contact form */
 
   .information-pop .img-project {
     max-width: 659px;
-    flex-grow: 2;
   }
 }
 

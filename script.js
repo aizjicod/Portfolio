@@ -21,6 +21,14 @@ listItem.forEach((child) => { child.addEventListener('click', menuTgl); });
 
 const dataProjects = [
   {
+    name: 'multi-work series',
+    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    tec: ['bootstrap', 'css', 'html', 'ruby'],
+    img: 'img/work-img.png',
+    seelive: 'link-to-other-ptoject',
+    linkCode: 'link-to-the-repository',
+  },
+  {
     name: 'Profesional Art Printing Data 1',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
@@ -167,10 +175,12 @@ const createPopup = (num) => {
   // end of function for create popup
 };
 // creating of cards dinamically
-dataProjects.forEach((num) => {
-  createCards(num);
-  createPopup(num);
-});
+for (let i = 0; i < dataProjects.length; i++) {
+  createPopup(dataProjects[i]);
+}
+for (let i = 1; i < dataProjects.length; i++) {
+  createCards(dataProjects[i]);
+}
 // variables for popup
 const popWrapperLi = document.querySelectorAll('.wrapper-pop');
 const popWrapper = Array.from(popWrapperLi);
@@ -180,9 +190,9 @@ const popBtnClose = document.querySelectorAll('.btn-popup');
 const btnCloseLi = Array.from(popBtnClose);
 
 // functions for popup
-for (let i = 1; i < btnList.length; i += 1) {
+for (let i = 0; i < btnList.length; i += 1) {
   btnList[i].addEventListener('click', () => {
-    popWrapper[i - 1].classList.toggle('visibility');
+    popWrapper[i].classList.toggle('visibility');
     header.classList.toggle('visibility');
     popup.classList.toggle('visibility');
     main.classList.toggle('blur');
