@@ -65,6 +65,10 @@ a {
   background-color: #fff;
 }
 
+.title-pop .hamburguer-btn .bar {
+  background: black;
+}
+
 .hamburguer-btn.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -365,7 +369,7 @@ button:disabled {
 }
 
 .wrapper-pop {
-  margin-top: 20px; 
+  margin-top: 20px;
   padding: 16px;
   padding-bottom: 50px;
   width: 85%;
@@ -389,17 +393,13 @@ button:disabled {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
 .title-pop .hamburguer-btn {
   display: block;
   background-color: inherit;
-}
-
-.title-pop .hamburguer-btn .bar {
-  background: black;
 }
 
 .title-pop .hamburguer-btn .bar:first-child {
@@ -413,11 +413,22 @@ button:disabled {
 .title-pop .tecnologies-used {
   width: 100%;
   display: flex;
-  height: fit-content;
-  margin: 0 24px
+  flex-wrap: wrap;
+  height: min-content;
+  margin: 0 24px;
 }
 
-.title-pop .tecnologies-used li{
+.skill-ul li {
+  color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+}
+
+.title-pop .tecnologies-used li {
   border: 1px solid #979493;
   color: #000;
   width: max-content;
@@ -428,14 +439,14 @@ button:disabled {
   flex-direction: column;
 }
 
-.information-pop .img-project{
+.information-pop .img-project {
   margin: 24px auto;
   min-width: 311px;
   max-width: 50%;
 }
 
 .information-pop .information {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: space-around;
@@ -443,7 +454,7 @@ button:disabled {
 
 .information-pop .information .information-p {
   width: 100%;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -453,11 +464,11 @@ button:disabled {
 
 .information-pop .information .information-btn {
   padding: 12px;
-  display:flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 12px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -536,16 +547,6 @@ start about me section */
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.skill-ul li {
-  color: #fff;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  font-family: 'Inter', sans-serif;
-  font-size: 22px;
 }
 
 .skill-ul li:first-child {
@@ -918,6 +919,7 @@ start of contact form */
   }
 
   /* end of contact form */
+
   /* start of popup */
 
   .wrapper-pop {
@@ -928,7 +930,7 @@ start of contact form */
     width: 95%;
   }
 
-  .information-pop { 
+  .information-pop {
     flex-direction: row;
   }
 
@@ -939,7 +941,7 @@ start of contact form */
   }
 
   .information-pop .information .information-btn {
-    height: fit-content;
+    height: min-content;
   }
 
   .information-pop .img-project {
