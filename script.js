@@ -175,10 +175,10 @@ const createPopup = (num) => {
   // end of function for create popup
 };
 // creating of cards dinamically
-for (let i = 0; i < dataProjects.length; i++) {
+for (let i = 0; i < dataProjects.length; i += 1) {
   createPopup(dataProjects[i]);
 }
-for (let i = 1; i < dataProjects.length; i++) {
+for (let i = 1; i < dataProjects.length; i += 1) {
   createCards(dataProjects[i]);
 }
 // variables for popup
