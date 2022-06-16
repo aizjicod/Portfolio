@@ -250,12 +250,12 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-form.addEventListener("input", () => {
-    localStorage.setItem('emailValue',`${inputEmail.value}`)
-    localStorage.setItem('nameValue',`${inputName.value}`)
-    localStorage.setItem('textareaValue',`${inputTextarea.value}`)
-})
-  
+form.addEventListener('input', () => {
+  localStorage.setItem('emailValue', `${inputEmail.value}`);
+  localStorage.setItem('nameValue', `${inputName.value}`);
+  localStorage.setItem('textareaValue', `${inputTextarea.value}`);
+});
+
 inputName.value = localStorage.getItem('nameValue');
 inputEmail.value = localStorage.getItem('emailValue');
 inputTextarea.value = localStorage.getItem('textareaValue');
