@@ -211,6 +211,8 @@ for (let i = 0; i < btnCloseLi.length; i += 1) {
 
 const form = document.getElementById('contact-form');
 const inputEmail = document.getElementById('email-input');
+const inputName = document.getElementById('name-input');
+const inputTextarea = document.getElementById('textarea-input');
 const spanEmail = document.querySelector('.email-span');
 
 const showMsg = (email, msg, validation) => {
@@ -239,9 +241,21 @@ const emailValidation = (email) => {
   return valError(email, 'this email is invalid or is on uppercase, please fix the problem to continue');
 };
 
+// event listener for form
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   if (emailValidation(inputEmail)) {
     form.submit();
   }
 });
+
+form.addEventListener('input', () => {
+  localStorage.setItem('emailValue', `${inputEmail.value}`);
+  localStorage.setItem('nameValue', `${inputName.value}`);
+  localStorage.setItem('textareaValue', `${inputTextarea.value}`);
+});
+
+inputName.value = localStorage.getItem('nameValue');
+inputEmail.value = localStorage.getItem('emailValue');
+inputTextarea.value = localStorage.getItem('textareaValue');
