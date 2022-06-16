@@ -633,10 +633,6 @@ start of contact form */
   padding-left: 8px;
 }
 
-.email {
-  width: 80%;
-}
-
 #email-input {
   min-width: 100%;
 }
