@@ -6,7 +6,6 @@
 }
 
 body {
-  /* overflow-x: hidden; */
   margin: 0;
   padding: 0;
 }
@@ -633,10 +632,6 @@ start of contact form */
   padding-left: 8px;
 }
 
-#email-input {
-  min-width: 100%;
-}
-
 #email-input.error {
   border: 2px solid #f55800;
   animation: invalid 1s;
@@ -645,7 +640,7 @@ start of contact form */
 .email-span.error {
   margin-top: 12px;
   display: flex;
-  width: 100%;
+  width: 80%;
   border: 2px solid #f55800;
   padding: 2px;
   font-family: 'Inter', sans-serif;
@@ -945,11 +940,11 @@ start of contact form */
     padding: 2px;
   }
 
-  .email {
+  #contact-form textarea {
     width: 100%;
   }
 
-  #contact-form textarea {
+  .email-span.error {
     width: 100%;
   }
 
