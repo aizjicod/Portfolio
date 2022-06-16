@@ -210,62 +210,38 @@ for (let i = 0; i < btnCloseLi.length; i += 1) {
 // validation for email input
 
 const form = document.getElementById('contact-form');
-const inputEmail = document.getElementById("email-input");
-const spanEmail = document.querySelector('.email-span')
+const inputEmail = document.getElementById('email-input');
+const spanEmail = document.querySelector('.email-span');
 
 const showMsg = (email, msg, validation) => {
-  email.classList.remove('error', 'succes')
+  email.classList.remove('error', 'succes');
   email.className = validation ? 'succes' : 'error';
   spanEmail.textContent = msg;
-  spanEmail.classList.add(validation ? 'succes' : 'error' );
+  spanEmail.classList.add(validation ? 'succes' : 'error');
   return validation;
-}
+};
 
-const valSucces = (email) => {
-  return showMsg(email,'',true)
-}
+const valSucces = (email) => showMsg(email, '', true);
 
-const valError = (email,msg) => {
-  return showMsg(email, msg, false)
-}
+const valError = (email, msg) => showMsg(email, msg, false);
 
 const emailValidation = (email) => {
   // in input is blanck
-  if(email.value.trim() === '') {
-    return valError(email, "this space is in blank");
+  if (email.value.trim() === '') {
+    return valError(email, 'this space is in blank');
   }
 
-  let emailReg = /^[a-z_\-0-9\.\*\#\$\!\~\%\^\&\-\+\?\|]+@+[a-z\-0-9]+(.com)$/; 
+  const emailReg = /^[a-z_\-0-9\]+@+[a-z\-0-9]+(.com)$/;
 
-  if(emailReg.test(email.value)) {
+  if (emailReg.test(email.value)) {
     return valSucces(email);
-  }else {
-    return valError(email, 'this email is invalid or is on uppercase, please fix the problem to continue');
   }
-
-}
+  return valError(email, 'this email is invalid or is on uppercase, please fix the problem to continue');
+};
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if(emailValidation(inputEmail)) {
+  if (emailValidation(inputEmail)) {
     form.submit();
   }
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
