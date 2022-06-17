@@ -288,7 +288,7 @@ button:disabled {
   max-width: 100%;
   display: grid;
   grid-template-rows: min-content;
-  grid-auto-rows:min-content;
+  grid-auto-rows: min-content;
   justify-content: center;
   gap: 24px;
 }
@@ -458,7 +458,6 @@ button:disabled {
 
 .information-pop .img-project {
   margin: 24px auto;
-  /* min-width: 311px; */
   max-width: 50%;
 }
 
@@ -714,7 +713,7 @@ start of contact form */
 }
 
 .bottom-line img {
-  margin: 23px auto 8px ;
+  margin: 23px auto 8px;
 }
 
 /* desktop version */
