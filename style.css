@@ -387,12 +387,14 @@ button:disabled {
   padding: 16px;
   padding-bottom: 50px;
   width: 85%;
-  height: max-content;
+  max-height: 90vh;
   background: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 24px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .title-pop {
@@ -984,11 +986,18 @@ start of contact form */
   }
 
   .title-pop {
-    width: 95%;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .title-pop .title {
+    flex: 1;
+    padding-left: 24px;
   }
 
   .information-pop {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .information-pop .information {
@@ -1003,6 +1012,7 @@ start of contact form */
 
   .information-pop .img-project {
     max-width: 659px;
+    margin: 24px 0;
   }
 }
 
