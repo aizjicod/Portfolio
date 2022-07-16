@@ -31,8 +31,8 @@ const dataProjects = [
   },
   {
     name: 'To-do List',
-    info: "on this project I will be doing a to do list. this project will be done with a template for webpack and with the following languages: CSS, HTML and JavaScript",
-    tec: ['css', 'html','JavaScript'],
+    info: 'on this project I will be doing a to do list. this project will be done with a template for webpack and with the following languages: CSS, HTML and JavaScript',
+    tec: ['css', 'html', 'JavaScript'],
     img: 'img/projects-ss/todo-list.PNG',
     imgCard: 'img/projects-ss/card-todoList.PNG',
     seelive: 'https://aizjicod.github.io/to-do-list/dist/',
@@ -92,7 +92,7 @@ const wraperCard = document.querySelector('.card-wrapper');
 const createCards = (num) => {
   const cardWorks = document.createElement('div');
   cardWorks.classList.add('card-works');
-  cardWorks.style.backgroundImage = `linear-gradient(rgba(25, 25, 25, 0.5), rgba(0, 0, 0, 0.8)),url(${num.imgCard})` ;
+  cardWorks.style.backgroundImage = `linear-gradient(rgba(25, 25, 25, 0.5), rgba(0, 0, 0, 0.8)),url(${num.imgCard})`;
   const card = document.createElement('div');
   card.classList.add('card-content');
   const h2 = document.createElement('h2');
@@ -166,7 +166,7 @@ const createPopup = (num) => {
   secP.classList.add('information-p');
   secP.textContent = `${num.info}`;
   secInf.appendChild(secP);
-  const btnWrapper1 = document.createElement('a')
+  const btnWrapper1 = document.createElement('a');
   const secBtn1 = document.createElement('buttton');
   secBtn1.classList.add('information-btn');
   btnWrapper1.setAttribute('href', `${num.seelive}`);
@@ -176,7 +176,7 @@ const createPopup = (num) => {
   const btnImg1 = document.createElement('img');
   btnImg1.setAttribute('src', 'img/see-live.svg');
   secBtn1.appendChild(btnImg1);
-  const btnWrapper2 = document.createElement('a')
+  const btnWrapper2 = document.createElement('a');
   const secBtn2 = document.createElement('buttton');
   secBtn2.classList.add('information-btn');
   secBtn2.textContent = 'see source';

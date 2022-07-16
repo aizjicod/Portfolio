@@ -299,7 +299,7 @@ button:disabled {
   max-width: 320px;
   height: 386px;
   display: flex;
-  gap:10px;
+  gap: 10px;
   align-items: flex-end;
 }
 
@@ -454,6 +454,22 @@ button:disabled {
   margin-bottom: 5px;
 }
 
+a .information-btn:hover {
+  background: #fff5e1 !important;
+  border: 1px solid #f55800;
+  color: #f55800 !important;
+}
+
+a .information-btn:active {
+  background: #e05304 !important;
+  color: #f4f1f0;
+}
+
+a .information-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
 .information-pop {
   display: flex;
   flex-direction: column;
@@ -494,22 +510,6 @@ button:disabled {
   line-height: 24px;
   background: #f55800;
   color: #fff;
-}
-
-a .information-btn:hover {
-  background: #fff5e1 !important;
-  border: 1px solid #f55800;
-  color: #f55800 !important;
-}
-
-a .information-btn:active {
-  background: #e05304 !important;
-  color: #f4f1f0;
-}
-
-a .information-btn:disabled {
-  background: #f4f1f0;
-  color: #5b5957;
 }
 
 /* end work section
