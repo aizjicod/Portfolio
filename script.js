@@ -25,22 +25,25 @@ const dataProjects = [
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/work-img.png',
+    imgCard: 'img/work-img.png',
     seelive: 'link-to-other-ptoject',
     linkCode: 'link-to-the-repository',
   },
   {
-    name: 'Profesional Art Printing Data 1',
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    tec: ['bootstrap', 'css', 'html', 'ruby'],
-    img: 'img/card-bg.png',
-    seelive: 'link-to-other-ptoject',
-    linkCode: 'link-to-the-repository',
+    name: 'To-do List',
+    info: 'on this project I will be doing a to do list. this project will be done with a template for webpack and with the following languages: CSS, HTML and JavaScript',
+    tec: ['css', 'html', 'JavaScript'],
+    img: 'img/projects-ss/todo-list.PNG',
+    imgCard: 'img/projects-ss/card-todoList.PNG',
+    seelive: 'https://aizjicod.github.io/to-do-list/dist/',
+    linkCode: 'https://github.com/aizjicod/to-do-list',
   },
   {
     name: 'Profesional Art Printing Data 2',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/card-bg.png',
+    imgCard: 'img/card-bg.png',
     seelive: 'link-to-other-ptoject',
     linkCode: 'link-to-the-repository',
   },
@@ -49,6 +52,7 @@ const dataProjects = [
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/card-bg.png',
+    imgCard: 'img/card-bg.png',
     seelive: 'link-to-other-ptoject',
     linkCode: 'link-to-the-repository',
   },
@@ -57,6 +61,7 @@ const dataProjects = [
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/card-bg.png',
+    imgCard: 'img/card-bg.png',
     seelive: 'link-to-other-ptoject',
     linkCode: 'link-to-the-repository',
   },
@@ -65,6 +70,7 @@ const dataProjects = [
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/card-bg.png',
+    imgCard: 'img/card-bg.png',
     seelive: 'link-to-other-ptoject',
     linkCode: 'link-to-the-repository',
   },
@@ -73,6 +79,7 @@ const dataProjects = [
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/card-bg.png',
+    imgCard: 'img/card-bg.png',
     seelive: 'link-to-other-ptoject',
     linkCode: 'link-to-the-repository',
   },
@@ -85,6 +92,7 @@ const wraperCard = document.querySelector('.card-wrapper');
 const createCards = (num) => {
   const cardWorks = document.createElement('div');
   cardWorks.classList.add('card-works');
+  cardWorks.style.backgroundImage = `linear-gradient(rgba(25, 25, 25, 0.5), rgba(0, 0, 0, 0.8)),url(${num.imgCard})`;
   const card = document.createElement('div');
   card.classList.add('card-content');
   const h2 = document.createElement('h2');
@@ -139,7 +147,7 @@ const createPopup = (num) => {
   const ulPopup = document.createElement('ul');
   ulPopup.classList.add('tecnologies-used');
   titlePop.appendChild(ulPopup);
-  for (let i = 0; i < dataProjects[0].tec.length; i += 1) {
+  for (let i = 0; i < num.tec.length; i += 1) {
     const liPopup = document.createElement('li');
     liPopup.textContent = `${num.tec[i]}`;
     ulPopup.appendChild(liPopup);
@@ -158,17 +166,23 @@ const createPopup = (num) => {
   secP.classList.add('information-p');
   secP.textContent = `${num.info}`;
   secInf.appendChild(secP);
-  const secBtn1 = document.createElement('button');
+  const btnWrapper1 = document.createElement('a');
+  const secBtn1 = document.createElement('buttton');
   secBtn1.classList.add('information-btn');
+  btnWrapper1.setAttribute('href', `${num.seelive}`);
   secBtn1.textContent = 'see live';
-  secInf.appendChild(secBtn1);
+  btnWrapper1.appendChild(secBtn1);
+  secInf.appendChild(btnWrapper1);
   const btnImg1 = document.createElement('img');
   btnImg1.setAttribute('src', 'img/see-live.svg');
   secBtn1.appendChild(btnImg1);
-  const secBtn2 = document.createElement('button');
+  const btnWrapper2 = document.createElement('a');
+  const secBtn2 = document.createElement('buttton');
   secBtn2.classList.add('information-btn');
   secBtn2.textContent = 'see source';
-  secInf.appendChild(secBtn2);
+  btnWrapper2.setAttribute('href', `${num.linkCode}`);
+  btnWrapper2.appendChild(secBtn2);
+  secInf.appendChild(btnWrapper2);
   const btnImg2 = document.createElement('img');
   btnImg2.setAttribute('src', 'img/github-icon.svg');
   secBtn2.appendChild(btnImg2);
