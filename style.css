@@ -294,10 +294,12 @@ button:disabled {
 }
 
 .card-works {
-  background: url(img/card-bg.png) no-repeat;
-  width: min-content;
+  background: no-repeat center;
+  background-size: contain;
+  max-width: 320px;
   height: 386px;
   display: flex;
+  gap:10px;
   align-items: flex-end;
 }
 
@@ -433,7 +435,6 @@ button:disabled {
   display: flex;
   flex-wrap: wrap;
   height: min-content;
-  margin: 0 24px;
 }
 
 .skill-ul li {
@@ -460,7 +461,7 @@ button:disabled {
 
 .information-pop .img-project {
   margin: 24px auto;
-  max-width: 50%;
+  max-width: 90%;
 }
 
 .information-pop .information {
@@ -491,6 +492,24 @@ button:disabled {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  background: #f55800;
+  color: #fff;
+}
+
+a .information-btn:hover {
+  background: #fff5e1 !important;
+  border: 1px solid #f55800;
+  color: #f55800 !important;
+}
+
+a .information-btn:active {
+  background: #e05304 !important;
+  color: #f4f1f0;
+}
+
+a .information-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 /* end work section
@@ -887,16 +906,6 @@ start of contact form */
     box-shadow: 0 0 10px #e05304, 0 0 10px #e05304, 0 0 10px #e05304;
   }
 
-  .card-works:nth-child(2),
-  .card-works:nth-child(5) {
-    background-image: url(img/desktop-version/dt-card-bg2.png);
-  }
-
-  .card-works:nth-child(3),
-  .card-works:nth-child(6) {
-    background-image: url(img/desktop-version/dt-card-bg3.png);
-  }
-
   /* end of work section
   start of about me section */
 
@@ -996,6 +1005,7 @@ start of contact form */
   }
 
   .information-pop {
+    width: 90%;
     flex-direction: row;
     justify-content: space-evenly;
   }
@@ -1011,7 +1021,7 @@ start of contact form */
   }
 
   .information-pop .img-project {
-    max-width: 659px;
+    max-width: 600px;
     margin: 24px 0;
   }
 }
