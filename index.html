@@ -1,168 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <main class="main">
-        <!-- headline -->
-        <header class="header">
-            <a class="logo-placeholder" href="#">John Doe</a>
-            <nav>
-                <div class="mobile-v">
-                    <div class="hamburguer-btn">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <ul class="menu-mobile visibility">
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#about-me">About</a>
-                        </li>
-                        <li>
-                            <a href="#form-section">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="desktop-v nav-items-dt">
-                    <ul class="headline-dt-ul">
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#about-me">About</a>
-                        </li>
-                        <li>
-                            <a href="#form-section">Contact</a>
-                        </li>
-                    </ul>
-                    <img src="img/desktop-version/email-icon-desktop.png" alt="this is an image of a cart.">
-                </div>
-            </nav>
-        </header>
-        <section class="headline">
-            <article class="headline-article">
-                <h1>Hey There. <br>
-                    I’m Alex</h1>
-                <h2>I’am a Software Developer</h2>
-                <p class="headline-para">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                    don’t hestiate to contact me.</p>
-            </article>
-            <ul class="social-media">
-                <li class="angelist-icon"><a href="#"><img src="img/angelist-icon.png" alt="this is an icon of angelist" class="media-icon"></a></li>
-                <li class="github-icon"><a href="#"><img src="img/github-icon.png" alt="this is an icon for github" class="media-icon"></a></li>
-                <li class="medium-icon"><a href="#"><img src="img/medium-icon.png" alt="this is an icon for medium" class="media-icon"></a></li>
-                <li class="linkedin-icon"><a href="#"><img src="img/linkedin-icon.png" alt="this is an icon for linkedin" class="media-icon"></a></li>
-                <li class="twitter-icon"><a href="#"><img src="img/twitter-icon.png" alt="this is an icon for twitter" class="media-icon"></a></li>
-            </ul>
-        </section>
-        <!-- works section -->
-        <section class="works-section" id="portfolio">
-            <h1 class="works-h1">My Recent Works</h1>
-            <div class="desktop-v line-h1-works"></div>
-
-            <img src="img/work-img.png" alt="this is an image of the type of work">
-
-            <article class="works-article">
-                <h2>Multi-Post Stories</h2>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                <div class="tags">
-                    <a><div class="tag-btn">css</div></a>
-                    <a><div class="tag-btn">html</div></a>
-                    <a><div class="tag-btn">bootstrap</div></a>
-                    <a><div class="tag-btn">Ruby</div></a>
-                </div>
-                <div class="works__action-btn">
-                    <button type="button" class="works-btn project-btn">See Project</button>
-                </div>
-            </article>
-            <div class="card-wrapper">
-            </div>
-        </section>
-        <!-- end of work section -->
-        <!-- about me section -->
-        <section class="about-me" id="about-me">
-            <section class="abtme-content">
-                <h2>About me</h2>
-                <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-                <div class="abt-btn">
-                    <button type="button" >Get My Resume</button>
-                </div>
-                <div class="line-separation"></div>
-            </section>
-            <section class="skill">
-                <ul class="language skill-ul">
-                    <li>
-                        <img src="img/romboid.png" alt="it's a square that has been rotated -45 deg, it's orange">
-                        <h3>Language</h3>
-                    </li>
-                    <li>Javascript</li>
-                    <li>Ruby</li>
-                    <li>Html</li>
-                    <li>Css</li>
-                </ul>
-                <ul class="frameworks skill-ul">
-                    <li>
-                        <img src="img/romboid.png" alt="it's a square and it's orange">
-                        <h3>Frameworks</h3>
-                    </li>
-                    <li>Bootstrap</li>
-                    <li>Ruby on Rails</li>
-                    <li>RSPec</li>
-                    <li>CapyBara</li>
-                    <li>Selenium</li>
-                </ul>
-                <ul class="skills skill-ul">
-                    <li>
-                        <img src="img/cricle.png" alt="it's a circle and it's orange">
-                        <h3>Skills</h3>
-                    </li>
-                    <li>Codekit</li>
-                    <li>Github</li>
-                    <li>Codepen</li>
-                    <li>Gitlab</li>
-                    <li>Terminal</li>
-                </ul>
-            </section>
-        </section>
-        <!-- end of about me section -->
-        <section class="form-section" id="form-section">
-            <article class="first-article-contact">
-                <p class="contact-para">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-                <form action="https://formspree.io/f/xlezzzkn" method="POST" id="contact-form">
-                    <!-- put required on email and text area and name -->
-                    <input type="text" name="name" maxlength="30" required placeholder="Write Name" id="name-input">
-                    <input type="email" name="email"  placeholder="Write Email" id="email-input">
-                    <textarea name="message" cols="30" rows="10" maxlength="500" required placeholder="Write Your Message" id="textarea-input"></textarea>
-                    <button type="submit">Get in touch</button>
-                    <span class="email-span"></span>
-                </form>
-            </article>
-            <article class="botton-article">
-                <ul class="social-media">
-                    <li class="angelist-icon"><a href="#"><img src="img/angelist-contact.png" alt="this is an icon of angelist" class="media-icon"></a></li>
-                    <li class="github-icon"><a href="#"><img src="img/github-contact.png" alt="this is an icon for github" class="media-icon"></a></li>
-                    <li class="medium-icon"><a href="#"><img src="img/medium-contact.png" alt="this is an icon for medium" class="media-icon"></a></li>
-                    <li class="linkedin-icon"><a href="#"><img src="img/linkedn-contact.png" alt="this is an icon for linkedin" class="media-icon"></a></li>
-                    <li class="twitter-icon"><a href="#"><img src="img/twitter-contact.png" alt="this is an icon for twitter" class="media-icon"></a></li>
-                </ul>
-               <div class="bottom-line mobile-v">
-                   <img src="./img/bottom-line-contact.png" alt="A line that indicates bottom of the page">
-               </div>
-            </article>
-        </section>
-        
-    </main>
-    <section class="popup visibility">
+  <main class="main">
+    <!-- headline -->
+    <header class="header">
+      <a class="logo-a" href="#"><img class="logo" src="./img/logo/logo.png" alt="logo"></a>
+      <nav>
+        <div class="mobile-v">
+          <div class="hamburguer-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="menu-mobile visibility">
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#about-me">About</a>
+            </li>
+            <li>
+              <a href="#form-section">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop-v nav-items-dt">
+          <ul class="headline-dt-ul">
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#about-me">About</a>
+            </li>
+            <li>
+              <a href="#form-section">Contact</a>
+            </li>
+          </ul>
+          <img src="img/desktop-version/email-icon-desktop.png" alt="this is an image of a cart.">
+        </div>
+      </nav>
+    </header>
+    <section class="headline">
+      <article class="headline-article">
+        <h1>Hey There. <br>
+          I’m Alejandro</h1>
+        <h2>I’am a Software Developer</h2>
+        <p class="headline-para">I can help you build a product , feature or website Look through some of my work and
+          experience! If you like what you see and have a project you need coded,
+          don’t hestiate to contact me.</p>
+      </article>
+      <ul class="social-media">
+        <li class="angelist-icon"><a href="https://angel.co/u/aiziji"><img src="img/angelist-icon.png"
+              alt="this is an icon of angelist" class="media-icon"></a></li>
+        <li class="github-icon"><a href="https://github.com/aizjicod"><img src="img/github-icon.png"
+              alt="this is an icon for github" class="media-icon"></a></li>
+        <li class="medium-icon"><a href="https://medium.com/@aletv1501"><img src="img/medium-icon.png"
+              alt="this is an icon for medium" class="media-icon"></a></li>
+        <li class="linkedin-icon"><a href="https://www.linkedin.com/in/aiziji/"><img src="img/linkedin-icon.png"
+              alt="this is an icon for linkedin" class="media-icon"></a></li>
+        <li class="twitter-icon"><a href="https://twitter.com/aizijijr"><img src="img/twitter-icon.png"
+              alt="this is an icon for twitter" class="media-icon"></a></li>
+      </ul>
     </section>
-    <script src="script.js"></script>
+    <!-- works section -->
+    <section class="works-section" id="portfolio">
+      <h1 class="works-h1">My Recent Works</h1>
+      <div class="desktop-v line-h1-works"></div>
+
+      <img src="img/projects-ss/pokemon.png" alt="pokemon display">
+
+      <article class="works-article">
+        <h2>Pokemon</h2>
+        <p>Pokemon is a webapp that simulates a pokedex showing the pokemon of a certain type. The user can choose the type of pokemon they want to see. The app will show the pokemon of that type. The use can see the name, type, and image of the pokemon. The user can also see the games the pokemon is in.</p>
+        <div class="tags">
+          <a>
+            <div class="tag-btn">HTML</div>
+          </a>
+          <a>
+            <div class="tag-btn">CSS</div>
+          </a>
+          <a>
+            <div class="tag-btn">Javascripts</div>
+          </a>
+          <a>
+            <div class="tag-btn">Jest</div>
+          </a>
+          <a>
+            <div class="tag-btn">Webpack</div>
+          </a>
+        </div>
+        <div class="works__action-btn">
+            <button type="button" class="works-btn project-btn">See Project</button>
+        </div>
+      </article>
+      <div class="card-wrapper">
+      </div>
+    </section>
+    <!-- end of work section -->
+    <!-- about me section -->
+    <section class="about-me" id="about-me">
+      <section class="abtme-content">
+        <h2>About me</h2>
+        <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my
+          work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        </p>
+        <div class="abt-btn">
+          <button type="button">Get My Resume</button>
+        </div>
+        <div class="line-separation"></div>
+      </section>
+      <section class="skill">
+        <ul class="language skill-ul">
+          <li>
+            <img src="img/romboid.png" alt="it's a square that has been rotated -45 deg, it's orange">
+            <h3>Language</h3>
+          </li>
+          <li>Javascript</li>
+          <li>Ruby</li>
+          <li>Html</li>
+          <li>Css</li>
+        </ul>
+        <ul class="frameworks skill-ul">
+          <li>
+            <img src="img/romboid.png" alt="it's a square and it's orange">
+            <h3>Frameworks</h3>
+          </li>
+          <li>Bootstrap</li>
+          <li>Ruby on Rails</li>
+          <li>RSPec</li>
+          <li>CapyBara</li>
+          <li>Selenium</li>
+        </ul>
+        <ul class="skills skill-ul">
+          <li>
+            <img src="img/cricle.png" alt="it's a circle and it's orange">
+            <h3>Skills</h3>
+          </li>
+          <li>Codekit</li>
+          <li>Github</li>
+          <li>Codepen</li>
+          <li>Gitlab</li>
+          <li>Terminal</li>
+        </ul>
+      </section>
+    </section>
+    <!-- end of about me section -->
+    <section class="form-section" id="form-section">
+      <article class="first-article-contact">
+        <p class="contact-para">I'm always interested in hearing about new projects, so if you'd like to chat please get
+          in touch.</p>
+        <form action="https://formspree.io/f/xlezzzkn" method="POST" id="contact-form">
+          <!-- put required on email and text area and name -->
+          <input type="text" name="name" maxlength="30" required placeholder="Write Name" id="name-input">
+          <input type="email" name="email" placeholder="Write Email" id="email-input">
+          <textarea name="message" cols="30" rows="10" maxlength="500" required placeholder="Write Your Message"
+            id="textarea-input"></textarea>
+          <button type="submit">Get in touch</button>
+          <span class="email-span"></span>
+        </form>
+      </article>
+      <article class="botton-article">
+        <ul class="social-media">
+          <li class="angelist-icon"><a href="https://angel.co/u/aiziji"><img src="img/angelist-contact.png"
+                alt="this is an icon of angelist" class="media-icon"></a></li>
+          <li class="github-icon"><a href="https://github.com/aizjicod"><img src="img/github-contact.png"
+                alt="this is an icon for github" class="media-icon"></a></li>
+          <li class="medium-icon"><a href="https://medium.com/@aletv1501"><img src="img/medium-contact.png"
+                alt="this is an icon for medium" class="media-icon"></a></li>
+          <li class="linkedin-icon"><a href="https://www.linkedin.com/in/aiziji/"><img src="img/linkedn-contact.png"
+                alt="this is an icon for linkedin" class="media-icon"></a></li>
+          <li class="twitter-icon"><a href="https://twitter.com/aizijijr"><img src="img/twitter-contact.png"
+                alt="this is an icon for twitter" class="media-icon"></a></li>
+        </ul>
+        <div class="bottom-line mobile-v">
+          <img src="./img/bottom-line-contact.png" alt="A line that indicates bottom of the page">
+        </div>
+      </article>
+    </section>
+
+  </main>
+  <section class="popup visibility">
+  </section>
+  <script src="script.js"></script>
 </body>
-</html> 
+
+</html>

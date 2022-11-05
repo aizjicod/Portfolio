@@ -21,13 +21,13 @@ listItem.forEach((child) => { child.addEventListener('click', menuTgl); });
 
 const dataProjects = [
   {
-    name: 'multi-work series',
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    tec: ['bootstrap', 'css', 'html', 'ruby'],
-    img: 'img/work-img.png',
-    imgCard: 'img/work-img.png',
-    seelive: 'link-to-other-ptoject',
-    linkCode: 'link-to-the-repository',
+    name: 'Pokemon',
+    info: "Pokemon is a webapp that simulates a pokedex showing the pokemon of a certain type. The user can choose the type of pokemon they want to see. The app will show the pokemon of that type. The use can see the name, type, and image of the pokemon. The user can also see the games the pokemon is in.",
+    tec: ['Javascripts', 'css', 'html', 'jest', 'Webpack'],
+    img: 'img/projects-ss/pokemon.png',
+    imgCard: 'img/projects-ss/pokemon.png',
+    seelive: 'https://fourteen98.github.io/Pokemon/dist/',
+    linkCode: 'https://github.com/Fourteen98/Pokemon',
   },
   {
     name: 'To-do List',
