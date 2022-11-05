@@ -226,6 +226,7 @@ button:disabled {
 
 .works-section img {
   margin: 0 auto 24px;
+  width: 80%;
 }
 
 .works-section h2 {
