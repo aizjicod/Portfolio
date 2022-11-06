@@ -23,7 +23,7 @@ const dataProjects = [
   {
     name: 'Pokemon',
     info: "Pokemon is a webapp that simulates a pokedex showing the pokemon of a certain type. The user can choose the type of pokemon they want to see. The app will show the pokemon of that type. The use can see the name, type, and image of the pokemon. The user can also see the games the pokemon is in.",
-    tec: ['Javascripts', 'css', 'html', 'jest', 'Webpack'],
+    tec: ['Javascripts', 'jest', 'Webpack','css', 'html'],
     img: 'img/projects-ss/pokemon.png',
     imgCard: 'img/projects-ss/pokemon.png',
     seelive: 'https://fourteen98.github.io/Pokemon/dist/',
@@ -32,7 +32,7 @@ const dataProjects = [
   {
     name: 'To-do List',
     info: 'on this project I will be doing a to do list. this project will be done with a template for webpack and with the following languages: CSS, HTML and JavaScript',
-    tec: ['css', 'html', 'JavaScript'],
+    tec: ['JavaScript','css', 'html'],
     img: 'img/projects-ss/todo-list.PNG',
     imgCard: 'img/projects-ss/card-todoList.PNG',
     seelive: 'https://aizjicod.github.io/to-do-list/dist/',
@@ -41,7 +41,7 @@ const dataProjects = [
   {
     name: 'Math-Magicians',
     info: "On this app i will be using react to create a single web page which will include a calculator as well as quotes on another intance of the page",
-    tec: ['JavaScript', 'css', 'React'],
+    tec: ['JavaScript', 'React','css'],
     img: 'img/projects-ss/calculator.png',
     imgCard: 'img/projects-ss/card-calculator.png',
     seelive: 'https://calculatorapp-aiziji.netlify.app/',
@@ -50,7 +50,7 @@ const dataProjects = [
   {
     name: 'Space Travelers Hub',
     info: " It was done using the SpaceEx API. On this website you can check SpaceEx rockets and missions, book them so they appear on the My profile tab, on the profile you can follow links directly to their respective Wikipedia page.",
-    tec: ['Javascript', 'css', 'html', 'React', 'Jest', 'Redux'],
+    tec: ['React', 'Redux','Javascript', 'css', 'html','Jest'],
     img: 'img/projects-ss/space-travelers.png',
     imgCard: 'img/projects-ss/space-travelers.png',
     seelive: 'https://stellular-kataifi-d33ffc.netlify.app/',
@@ -58,8 +58,8 @@ const dataProjects = [
   },
   {
     name: 'Weather app',
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    tec: ['JavaScript', 'API', 'Redux', 'React'],
+    info: "This app was created using an API. the user can search for a certain location. after the location is fetch it will return a list of different location that matches the input.",
+    tec: ['Redux', 'React','JavaScript', 'API'],
     img: 'img/projects-ss/weather.png',
     imgCard: 'img/projects-ss/weather.png',
     seelive: 'https://weather-aiziji.netlify.app/',
