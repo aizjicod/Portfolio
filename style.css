@@ -38,7 +38,7 @@ header.active {
   width: 50px;
   transition: transform 2s;
   border-radius: 50%;
-  object-fit:fill;
+  object-fit: fill;
 }
 
 .logo:hover {
