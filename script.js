@@ -48,7 +48,25 @@ const dataProjects = [
     linkCode: 'https://github.com/aizjicod/math-magicians',
   },
   {
-    name: 'Profesional Art Printing Data 3',
+    name: 'Space Travelers Hub',
+    info: " It was done using the SpaceEx API. On this website you can check SpaceEx rockets and missions, book them so they appear on the My profile tab, on the profile you can follow links directly to their respective Wikipedia page.",
+    tec: ['Javascript', 'css', 'html', 'React', 'Jest', 'Redux'],
+    img: 'img/projects-ss/space-travelers.png',
+    imgCard: 'img/projects-ss/space-travelers.png',
+    seelive: 'https://stellular-kataifi-d33ffc.netlify.app/',
+    linkCode: 'https://github.com/lucas-crodrigues/space-trav-hub',
+  },
+  {
+    name: 'Weather app',
+    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    tec: ['JavaScript', 'API', 'Redux', 'React'],
+    img: 'img/projects-ss/weather.png',
+    imgCard: 'img/projects-ss/weather.png',
+    seelive: 'https://weather-aiziji.netlify.app/',
+    linkCode: 'https://github.com/aizjicod/weather-app-react',
+  },
+  {
+    name: "'Profesional Art Printing Data 5 soon...",
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/card-bg.png',
@@ -57,25 +75,7 @@ const dataProjects = [
     linkCode: 'link-to-the-repository',
   },
   {
-    name: 'Profesional Art Printing Data 4',
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    tec: ['bootstrap', 'css', 'html', 'ruby'],
-    img: 'img/card-bg.png',
-    imgCard: 'img/card-bg.png',
-    seelive: 'link-to-other-ptoject',
-    linkCode: 'link-to-the-repository',
-  },
-  {
-    name: "'Profesional Art Printing Data 5",
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    tec: ['bootstrap', 'css', 'html', 'ruby'],
-    img: 'img/card-bg.png',
-    imgCard: 'img/card-bg.png',
-    seelive: 'link-to-other-ptoject',
-    linkCode: 'link-to-the-repository',
-  },
-  {
-    name: 'Profesional Art Printing Data 6',
+    name: 'Profesional Art Printing Data 6 soon...',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/card-bg.png',
@@ -104,10 +104,21 @@ const createCards = (num) => {
   const ul = document.createElement('ul');
   ul.classList.add('tecnologies-used');
   card.appendChild(ul);
-  for (let j = 0; j < (num.tec).length; j += 1) {
+  if ((num.tec).length > 2) {
+    for (let j = 0; j < 2; j += 1) {
+      const liCard = document.createElement('li');
+      liCard.textContent = `${num.tec[j]}`;
+      ul.appendChild(liCard);
+    }
     const liCard = document.createElement('li');
-    liCard.textContent = `${num.tec[j]}`;
+    liCard.textContent = `more...`;
     ul.appendChild(liCard);
+  }else {
+    for (let j = 0; j < (num.tec).length; j += 1) {
+      const liCard = document.createElement('li');
+      liCard.textContent = `${num.tec[j]}`;
+      ul.appendChild(liCard);
+    }
   }
   const divBtn = document.createElement('div');
   divBtn.classList.add('action-btn');
