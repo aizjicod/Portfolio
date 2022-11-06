@@ -22,7 +22,7 @@ header {
   height: 92px;
   background: #3c3a39;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: sticky;
   top: 0;
@@ -34,17 +34,14 @@ header.active {
   justify-content: flex-end;
 }
 
-.logo-placeholder {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
+.logo {
+  width: 50px;
   transition: transform 2s;
+  border-radius: 50%;
+  object-fit: fill;
 }
 
-.logo-placeholder:hover {
+.logo:hover {
   transform: rotate(360deg);
 }
 
@@ -229,6 +226,7 @@ button:disabled {
 
 .works-section img {
   margin: 0 auto 24px;
+  width: 80%;
 }
 
 .works-section h2 {
@@ -245,13 +243,13 @@ button:disabled {
 .works-section p {
   max-width: 327px;
   margin: 0 24px;
-  height: 147px;
   font-family: 'Inter', sans-serif;
   line-height: 24px;
 }
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   max-width: 290px;
   margin: 0 24px 12px;
@@ -848,6 +846,7 @@ start of contact form */
     margin: 0 115px;
     grid-template-areas:
       "head line-head line-head"
+      "img img works-article"
       "img img works-article"
       "card-wraper card-wraper card-wraper";
     grid-template-columns: 1fr 1fr 1fr;

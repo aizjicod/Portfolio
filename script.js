@@ -21,25 +21,52 @@ listItem.forEach((child) => { child.addEventListener('click', menuTgl); });
 
 const dataProjects = [
   {
-    name: 'multi-work series',
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    tec: ['bootstrap', 'css', 'html', 'ruby'],
-    img: 'img/work-img.png',
-    imgCard: 'img/work-img.png',
-    seelive: 'link-to-other-ptoject',
-    linkCode: 'link-to-the-repository',
+    name: 'Pokemon',
+    info: 'Pokemon is a webapp that simulates a pokedex showing the pokemon of a certain type. The user can choose the type of pokemon they want to see. The app will show the pokemon of that type. The use can see the name, type, and image of the pokemon. The user can also see the games the pokemon is in.',
+    tec: ['Javascripts', 'jest', 'Webpack', 'css', 'html'],
+    img: 'img/projects-ss/pokemon.png',
+    imgCard: 'img/projects-ss/pokemon.png',
+    seelive: 'https://fourteen98.github.io/Pokemon/dist/',
+    linkCode: 'https://github.com/Fourteen98/Pokemon',
   },
   {
     name: 'To-do List',
     info: 'on this project I will be doing a to do list. this project will be done with a template for webpack and with the following languages: CSS, HTML and JavaScript',
-    tec: ['css', 'html', 'JavaScript'],
+    tec: ['JavaScript', 'css', 'html'],
     img: 'img/projects-ss/todo-list.PNG',
     imgCard: 'img/projects-ss/card-todoList.PNG',
     seelive: 'https://aizjicod.github.io/to-do-list/dist/',
     linkCode: 'https://github.com/aizjicod/to-do-list',
   },
   {
-    name: 'Profesional Art Printing Data 2',
+    name: 'Math-Magicians',
+    info: 'On this app i will be using react to create a single web page which will include a calculator as well as quotes on another intance of the page',
+    tec: ['JavaScript', 'React', 'css'],
+    img: 'img/projects-ss/calculator.png',
+    imgCard: 'img/projects-ss/card-calculator.png',
+    seelive: 'https://calculatorapp-aiziji.netlify.app/',
+    linkCode: 'https://github.com/aizjicod/math-magicians',
+  },
+  {
+    name: 'Space Travelers Hub',
+    info: ' It was done using the SpaceEx API. On this website you can check SpaceEx rockets and missions, book them so they appear on the My profile tab, on the profile you can follow links directly to their respective Wikipedia page.',
+    tec: ['React', 'Redux', 'Javascript', 'css', 'html', 'Jest'],
+    img: 'img/projects-ss/space-travelers.png',
+    imgCard: 'img/projects-ss/space-travelers.png',
+    seelive: 'https://stellular-kataifi-d33ffc.netlify.app/',
+    linkCode: 'https://github.com/lucas-crodrigues/space-trav-hub',
+  },
+  {
+    name: 'Weather app',
+    info: 'This app was created using an API. the user can search for a certain location. after the location is fetch it will return a list of different location that matches the input.',
+    tec: ['Redux', 'React', 'JavaScript', 'API'],
+    img: 'img/projects-ss/weather.png',
+    imgCard: 'img/projects-ss/weather.png',
+    seelive: 'https://weather-aiziji.netlify.app/',
+    linkCode: 'https://github.com/aizjicod/weather-app-react',
+  },
+  {
+    name: "'Profesional Art Printing Data 5 soon...",
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/card-bg.png',
@@ -48,34 +75,7 @@ const dataProjects = [
     linkCode: 'link-to-the-repository',
   },
   {
-    name: 'Profesional Art Printing Data 3',
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    tec: ['bootstrap', 'css', 'html', 'ruby'],
-    img: 'img/card-bg.png',
-    imgCard: 'img/card-bg.png',
-    seelive: 'link-to-other-ptoject',
-    linkCode: 'link-to-the-repository',
-  },
-  {
-    name: 'Profesional Art Printing Data 4',
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    tec: ['bootstrap', 'css', 'html', 'ruby'],
-    img: 'img/card-bg.png',
-    imgCard: 'img/card-bg.png',
-    seelive: 'link-to-other-ptoject',
-    linkCode: 'link-to-the-repository',
-  },
-  {
-    name: "'Profesional Art Printing Data 5",
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    tec: ['bootstrap', 'css', 'html', 'ruby'],
-    img: 'img/card-bg.png',
-    imgCard: 'img/card-bg.png',
-    seelive: 'link-to-other-ptoject',
-    linkCode: 'link-to-the-repository',
-  },
-  {
-    name: 'Profesional Art Printing Data 6',
+    name: 'Profesional Art Printing Data 6 soon...',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     tec: ['bootstrap', 'css', 'html', 'ruby'],
     img: 'img/card-bg.png',
@@ -104,10 +104,21 @@ const createCards = (num) => {
   const ul = document.createElement('ul');
   ul.classList.add('tecnologies-used');
   card.appendChild(ul);
-  for (let j = 0; j < (num.tec).length; j += 1) {
+  if ((num.tec).length > 2) {
+    for (let j = 0; j < 2; j += 1) {
+      const liCard = document.createElement('li');
+      liCard.textContent = `${num.tec[j]}`;
+      ul.appendChild(liCard);
+    }
     const liCard = document.createElement('li');
-    liCard.textContent = `${num.tec[j]}`;
+    liCard.textContent = 'more...';
     ul.appendChild(liCard);
+  } else {
+    for (let j = 0; j < (num.tec).length; j += 1) {
+      const liCard = document.createElement('li');
+      liCard.textContent = `${num.tec[j]}`;
+      ul.appendChild(liCard);
+    }
   }
   const divBtn = document.createElement('div');
   divBtn.classList.add('action-btn');
