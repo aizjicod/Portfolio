@@ -298,6 +298,8 @@ const blurCards = (id) => {
   cardArr.forEach((card, index) => {
     if (index !== id) {
       card.classList.add('blur')
+    }else {
+      card.style.zIndex = '50'
     }
   });
 }
@@ -309,6 +311,7 @@ cardArr.forEach((card, index) => {
   card.addEventListener('mouseleave', () => {
     cardArr.forEach((card) => {
         card.classList.remove('blur')
+        card.style.zIndex = '1'
     });
   })
 })
