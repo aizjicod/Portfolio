@@ -222,6 +222,9 @@ button:disabled {
 
 .works-article {
   width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .works-section img {
@@ -241,17 +244,17 @@ button:disabled {
 }
 
 .works-section p {
-  max-width: 327px;
+  width: 100%;
   margin: 0 24px;
   font-family: 'Inter', sans-serif;
   line-height: 24px;
 }
 
 .tags {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  max-width: 290px;
   margin: 0 24px 12px;
 }
 
@@ -367,7 +370,7 @@ button:disabled {
 }
 
 .blur {
-  filter: blur(8px);
+  filter: blur(10px);
 }
 
 .popup {

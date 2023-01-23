@@ -284,3 +284,31 @@ form.addEventListener('input', () => {
 inputName.value = localStorage.getItem('nameValue');
 inputEmail.value = localStorage.getItem('emailValue');
 inputTextarea.value = localStorage.getItem('textareaValue');
+
+
+// add blur effect after hovering a card
+// variables
+const cardNodeList = document.querySelectorAll('.card-works');
+const cardArr = Array.from(cardNodeList);
+
+//functions
+
+// add blur to other cards while mantaining focus on the hover card
+const blurCards = (id) => {
+  cardArr.forEach((card, index) => {
+    if (index !== id) {
+      card.classList.add('blur')
+    }
+  });
+}
+
+cardArr.forEach((card, index) => {
+  card.addEventListener('mouseenter', () => {
+    blurCards(index)
+  })
+  card.addEventListener('mouseleave', () => {
+    cardArr.forEach((card) => {
+        card.classList.remove('blur')
+    });
+  })
+})
