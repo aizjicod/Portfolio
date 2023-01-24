@@ -232,6 +232,12 @@ button:disabled {
   width: 80%;
 }
 
+.works__action-btn {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
 .works-section h2 {
   width: 88%;
   height: 36px;
@@ -973,7 +979,7 @@ start of contact form */
   }
 
   #contact-form textarea {
-    width: 100%;
+    min-width: 100%;
   }
 
   .email-span.error {
