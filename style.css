@@ -22,7 +22,7 @@ header {
   height: 92px;
   background: #3c3a39;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
@@ -87,6 +87,7 @@ a {
 .menu-mobile {
   position: absolute;
   left: 0;
+  top: 80px;
   height: 100vh;
   width: 100%;
   background: #3c3a39;
@@ -757,6 +758,7 @@ start of contact form */
   }
 
   header {
+    justify-content: space-around;
     height: 72px;
   }
 
@@ -769,7 +771,6 @@ start of contact form */
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    margin-right: 142px;
   }
 
   .headline-dt-ul {
