@@ -66,9 +66,9 @@ const dataProjects = [
     linkCode: 'https://github.com/aizjicod/weather-app-react',
   },
   {
-    name: "Bike rental",
-    info: "A Rails API as a backend, and React front end project. The user can signup or login, then it will be redirected to the home page after a successful login. The user can see all the models of bikes on the page, after clicking them the user can add a reservasion to a specific bike and if the user wants to add or delete a reservations.",
-    tec: ['React', 'Redux', 'HTML', 'CSS','API', 'Ruby on Rails'],
+    name: 'Bike rental',
+    info: 'A Rails API as a backend, and React front end project. The user can signup or login, then it will be redirected to the home page after a successful login. The user can see all the models of bikes on the page, after clicking them the user can add a reservasion to a specific bike and if the user wants to add or delete a reservations.',
+    tec: ['React', 'Redux', 'HTML', 'CSS', 'API', 'Ruby on Rails'],
     img: 'img/projects-ss/bike-rental.png',
     imgCard: 'img/projects-ss/card-bike-rental.png',
     seelive: 'https://ducati-rentals.netlify.app/',
@@ -285,33 +285,32 @@ inputName.value = localStorage.getItem('nameValue');
 inputEmail.value = localStorage.getItem('emailValue');
 inputTextarea.value = localStorage.getItem('textareaValue');
 
-
 // add blur effect after hovering a card
 // variables
 const cardNodeList = document.querySelectorAll('.card-works');
 const cardArr = Array.from(cardNodeList);
 
-//functions
+// functions
 
 // add blur to other cards while mantaining focus on the hover card
 const blurCards = (id) => {
   cardArr.forEach((card, index) => {
     if (index !== id) {
-      card.classList.add('blur')
-    }else {
-      card.style.zIndex = '50'
+      card.classList.add('blur');
+    } else {
+      card.style.zIndex = '50';
     }
   });
-}
+};
 
 cardArr.forEach((card, index) => {
   card.addEventListener('mouseenter', () => {
-    blurCards(index)
-  })
+    blurCards(index);
+  });
   card.addEventListener('mouseleave', () => {
     cardArr.forEach((card) => {
-        card.classList.remove('blur')
-        card.style.zIndex = '1'
+      card.classList.remove('blur');
+      card.style.zIndex = '1';
     });
-  })
-})
+  });
+});

@@ -237,6 +237,7 @@ button:disabled {
   width: 100%;
   display: flex;
   justify-content: start;
+  margin: 0 24px 12px;
 }
 
 .works-section h2 {
@@ -274,10 +275,6 @@ button:disabled {
   font-weight: 500;
   line-height: 20px;
   color: #091e42;
-}
-
-.works__action-btn {
-  margin: 0 24px 12px;
 }
 
 .works-btn {
@@ -906,7 +903,7 @@ start of contact form */
   }
 
   .card-works {
-    background-size:cover;
+    background-size: cover;
     margin: 0;
     transition: all 1s;
   }
