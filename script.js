@@ -73,7 +73,7 @@ const dataProjects = [
     imgCard: 'img/projects-ss/card-bike-rental.png',
     seelive: 'https://ducati-rentals.netlify.app/',
     linkCode: 'https://github.com/AbrahaKahsay/final-capstone-frontend',
-  }
+  },
 ];
 
 // from this point on i will create a function which will create the cards
