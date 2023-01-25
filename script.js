@@ -22,7 +22,7 @@ listItem.forEach((child) => { child.addEventListener('click', menuTgl); });
 const dataProjects = [
   {
     name: 'Pokemon',
-    info: 'Pokemon is a webapp that simulates a pokedex showing the pokemon of a certain type. The user can choose the type of pokemon they want to see. The app will show the pokemon of that type. The use can see the name, type, and image of the pokemon. The user can also see the games the pokemon is in.',
+    info: 'Pokemon is a web-app that simulates a Pokedex showing the pokemon of a certain type. The user can choose the type of pokemon they want to see. The app will show the pokemon of that type. The user can see the name, type, and image of the pokemon. The user can also see the games the pokemon is in.',
     tec: ['Javascripts', 'jest', 'Webpack', 'css', 'html'],
     img: 'img/projects-ss/pokemon.png',
     imgCard: 'img/projects-ss/pokemon.png',
@@ -31,7 +31,7 @@ const dataProjects = [
   },
   {
     name: 'To-do List',
-    info: 'on this project I will be doing a to do list. this project will be done with a template for webpack and with the following languages: CSS, HTML and JavaScript',
+    info: 'on this project, I will be doing a to-do list. this project will be done with a template for webpack and with the following languages: CSS, HTML, and JavaScript',
     tec: ['JavaScript', 'css', 'html'],
     img: 'img/projects-ss/todo-list.PNG',
     imgCard: 'img/projects-ss/card-todoList.PNG',
@@ -40,7 +40,7 @@ const dataProjects = [
   },
   {
     name: 'Math-Magicians',
-    info: 'On this app i will be using react to create a single web page which will include a calculator as well as quotes on another intance of the page',
+    info: 'On this app, I will be using react to create a single web page which will include a calculator as well as quotes on another instance of the page',
     tec: ['JavaScript', 'React', 'css'],
     img: 'img/projects-ss/calculator.png',
     imgCard: 'img/projects-ss/card-calculator.png',
@@ -49,7 +49,7 @@ const dataProjects = [
   },
   {
     name: 'Space Travelers Hub',
-    info: ' It was done using the SpaceEx API. On this website you can check SpaceEx rockets and missions, book them so they appear on the My profile tab, on the profile you can follow links directly to their respective Wikipedia page.',
+    info: ' It was done using the SpaceEx API. On this website, you can check SpaceEx rockets and missions, and book them so they appear on the My Profile tab, on the profile you can follow links directly to their respective Wikipedia page.',
     tec: ['React', 'Redux', 'Javascript', 'css', 'html', 'Jest'],
     img: 'img/projects-ss/space-travelers.png',
     imgCard: 'img/projects-ss/space-travelers.png',
@@ -67,22 +67,13 @@ const dataProjects = [
   },
   {
     name: 'Bike rental',
-    info: 'A Rails API as a backend, and React front end project. The user can signup or login, then it will be redirected to the home page after a successful login. The user can see all the models of bikes on the page, after clicking them the user can add a reservasion to a specific bike and if the user wants to add or delete a reservations.',
+    info: 'A Rails API as a backend, and React front-end project. The user can signup or log in, then it will be redirected to the home page after a successful login. The user can see all the models of bikes on the page, after clicking them the user can add a reservation to a specific bike and if the user wants to add or delete a reservation.',
     tec: ['React', 'Redux', 'HTML', 'CSS', 'API', 'Ruby on Rails'],
     img: 'img/projects-ss/bike-rental.png',
     imgCard: 'img/projects-ss/card-bike-rental.png',
     seelive: 'https://ducati-rentals.netlify.app/',
     linkCode: 'https://github.com/AbrahaKahsay/final-capstone-frontend',
-  },
-  {
-    name: 'Profesional Art Printing Data 6 soon...',
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    tec: ['bootstrap', 'css', 'html', 'ruby'],
-    img: 'img/card-bg.png',
-    imgCard: 'img/card-bg.png',
-    seelive: 'link-to-other-ptoject',
-    linkCode: 'link-to-the-repository',
-  },
+  }
 ];
 
 // from this point on i will create a function which will create the cards
