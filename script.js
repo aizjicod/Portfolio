@@ -31,7 +31,7 @@ const dataProjects = [
   },
   {
     name: 'To-do List',
-    info: 'on this project, I will be doing a to-do list. this project will be done with a template for webpack and with the following languages: CSS, HTML, and JavaScript',
+    info: 'This project is made with a template for webpack. User can write some task to be done. After adding this task to the list they can mark them as completed and then delete them.',
     tec: ['JavaScript', 'css', 'html'],
     img: 'img/projects-ss/todo-list.PNG',
     imgCard: 'img/projects-ss/card-todoList.PNG',
